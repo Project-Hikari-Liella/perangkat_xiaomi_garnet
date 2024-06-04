@@ -633,4 +633,3 @@ on property:sys.volume.stream.bluetoothsco=*
 
 # Enable suspend to RAM
     write /sys/power/mem_sleep "deep"
-
