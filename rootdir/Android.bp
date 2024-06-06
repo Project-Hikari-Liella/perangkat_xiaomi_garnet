@@ -52,3 +52,17 @@ prebuilt_etc {
     sub_dir: "init",
     vendor: true,
 }
+
+prebuilt_etc {
+    name: "init.qti.media.rc",
+    src: "etc/init.qti.media.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.qti.media.sh",
+    src: "bin/init.qti.media.sh",
+    vendor: true,
+}
+
