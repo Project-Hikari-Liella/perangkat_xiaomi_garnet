@@ -481,7 +481,7 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/xiaomi
 
 # Telephony
-PRODUCT_PACKAGES += \
+# PRODUCT_PACKAGES += \
     extphonelib \
     extphonelib-product \
     extphonelib.xml \
@@ -499,7 +499,7 @@ PRODUCT_PACKAGES += \
     telephony-ext \
     xiaomi-telephony-stub
 
-PRODUCT_BOOT_JARS += \
+# PRODUCT_BOOT_JARS += \
     telephony-ext \
     xiaomi-telephony-stub
 

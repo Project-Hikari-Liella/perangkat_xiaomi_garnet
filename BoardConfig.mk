@@ -73,7 +73,7 @@ DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
     hardware/xiaomi/vintf/xiaomi_framework_compatibility_matrix.xml \
-    vendor/lineage/config/device_framework_matrix.xml
+    vendor/yaap/config/device_framework_matrix.xml
 
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/hidl/manifest.xml
 
@@ -107,8 +107,8 @@ BOARD_USES_GENERIC_KERNEL_IMAGE := true
 BOARD_KERNEL_CMDLINE := \
     video=vfb:640x400,bpp=32,memsize=3072000 \
     disable_dma32=on \
-    bootinfo.fingerprint=$(LINEAGE_VERSION) \
-    swinfo.fingerprint=$(LINEAGE_VERSION)
+    bootinfo.fingerprint=$(YAAP_VERSION) \
+    swinfo.fingerprint=$(YAaP_VERSION)
 
 BOARD_BOOTCONFIG := \
     androidboot.hardware=qcom \
@@ -142,7 +142,7 @@ BOARD_VENDOR_RAMDISK_KERNEL_MODULES_BLOCKLIST_FILE := $(RAMDISK_MODULES_PATH)/mo
 TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
 
 # Partitions
--include vendor/lineage/config/BoardConfigReservedSize.mk
+-include vendor/yaap/config/BoardConfigReservedSize.mk
 
 BOARD_EROFS_COMPRESSOR := lz4
 BOARD_EROFS_PCLUSTER_SIZE := 262144
