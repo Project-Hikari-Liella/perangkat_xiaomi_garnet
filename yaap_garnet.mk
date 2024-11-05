@@ -9,12 +9,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
+
+# Yaap
+TARGET_BUILD_GAPPS := true
+TARGET_SUPPORTS_64_BIT_APPS := true
 
 # Inherit from garnet device
 $(call inherit-product, device/xiaomi/garnet/device.mk)
 
-PRODUCT_NAME := lineage_garnet
+PRODUCT_NAME := yaap_garnet
 PRODUCT_DEVICE := garnet
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
