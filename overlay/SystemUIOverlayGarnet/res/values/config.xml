@@ -18,4 +18,7 @@
 
     <!-- Doze: check proximity sensor before pulsing? -->
     <bool name="doze_proximity_check_before_pulse">false</bool>
+
+    <!-- The padding on the start of the statusbar -->
+    <dimen name="status_bar_padding_start">36px</dimen>
 </resources>
