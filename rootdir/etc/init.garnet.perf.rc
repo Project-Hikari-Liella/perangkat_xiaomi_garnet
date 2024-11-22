@@ -15,6 +15,9 @@ on post-fs-data
     # Disable multiple kswapd threads
     write /proc/sys/vm/kswapd_threads 1
 
+    # Disable vblank IRQ immediately after turning off
+    write /sys/module/drm/parameters/vblankoffdelay -1
+
     # Override readahead to 2MiB during boot
     write /sys/block/dm-0/queue/read_ahead_kb 2048
     write /sys/block/dm-1/queue/read_ahead_kb 2048
