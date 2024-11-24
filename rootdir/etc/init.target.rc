@@ -204,6 +204,10 @@ on boot
     #USB controller configuration
     setprop vendor.usb.controller a600000.dwc3
 
+    # Set doze mode permissions
+    chown system system /sys/devices/platform/soc/soc:qcom,dsi-display-primary/doze_mode
+    chmod 0660 /sys/devices/platform/soc/soc:qcom,dsi-display-primary/doze_mode
+
     #chown/chmod input_suspend node
     chown system system /sys/class/qcom-battery/input_suspend
     chmod 774 /sys/class/qcom-battery/input_suspend
